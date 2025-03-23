@@ -1,0 +1,86 @@
+/* /////////////////////////////////////////////////////////////////////// */
+/* GENERAL CSS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: 3px solid #fcac50;
+}
+
+/* parimary #fb8601  */
+/* primary-darker #cf760f */
+/* primary-tint #f0ca9f*/
+/* :root {
+  --color-primary: #dd6e6e;
+  --color-primary-darker: #ae3636;
+  --color-primary-tint: #f2dddd;
+  --color-tertiary: #a46eec;
+  --color-font: #333;
+} */
+
+:root {
+  --color-primary: #fb8601;
+  --color-primary-darker: #dd7b0b;
+  --color-primary-tint: #f6dbb8;
+  --color-tertiary: #a46eec;
+  --color-font: #333;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.4rem;
+  background-color: white;
+  color: var(--color-font);
+}
+
+.hidden {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.grid {
+  display: grid;
+  gap: 3rem;
+  margin: 3rem 0 3rem 0;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-cols-6 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.btn {
+  color: white;
+  font-size: 2.4rem;
+  padding: 1rem 2rem;
+  border: none;
+  /* border-radius: 20px; */
+
+  background-color: var(--color-primary);
+  text-decoration: none;
+  position: absolute;
+  right: 0;
+
+  transition: all 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+  background-image: var(--color-primary-darker);
+}
